@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* styles.css */
 
 /* Reset some default styles */
@@ -21,6 +22,22 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+=======
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+>>>>>>> 6e92a575740b5f6bff8483b7c30f4a224948a452
 }
 
 .logo img {
@@ -28,6 +45,7 @@ header {
 }
 
 nav ul {
+<<<<<<< HEAD
     display: flex;
 }
 
@@ -57,11 +75,42 @@ nav ul li a:hover {
     color: #333;
     padding: 10px 20px;
     text-decoration: none;
+=======
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background: url('bg.jpg') center/cover no-repeat;
+    color: white;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #ff5733;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+>>>>>>> 6e92a575740b5f6bff8483b7c30f4a224948a452
     border-radius: 5px;
     transition: background 0.3s;
 }
 
 .cta-button:hover {
+<<<<<<< HEAD
     background: #FFC107;
 }
 
@@ -80,10 +129,24 @@ section {
 .service-grid {
     display: flex;
     justify-content: center;
+=======
+    background: #c13c20;
+}
+
+.about, .services, .contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+>>>>>>> 6e92a575740b5f6bff8483b7c30f4a224948a452
     gap: 20px;
 }
 
 .service-item {
+<<<<<<< HEAD
     background: #007BFF;
     color: white;
     padding: 20px;
@@ -110,10 +173,43 @@ button {
     padding: 10px;
     border: none;
     border-radius: 5px;
+=======
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+}
+
+form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+form button {
+    background: #ff5733;
+    color: white;
+    border: none;
+>>>>>>> 6e92a575740b5f6bff8483b7c30f4a224948a452
     cursor: pointer;
     transition: background 0.3s;
 }
 
+<<<<<<< HEAD
 button:hover {
     background: #0056b3;
+=======
+form button:hover {
+    background: #c13c20;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero {
+        height: 50vh;
+    }
+>>>>>>> 6e92a575740b5f6bff8483b7c30f4a224948a452
 }
